@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a593867b32fa1824982caed64f83b783, type: 3}
+  m_Name: New Code Graph Asset
+  m_EditorClassIdentifier: 
+  m_nodes:
+  - rid: 706393809746657293
+  - rid: 706393809746657294
+  - rid: 706393823373164544
+  m_connections:
+  - inputPort:
+      nodeId: 8e0cafda-d10d-4d63-bd9c-4c5899c1a818
+      portIndex: 1
+    outputPort:
+      nodeId: fda90522-6665-4bf1-9af0-562a77fd31fa
+      portIndex: 0
+  - inputPort:
+      nodeId: fd89663e-8020-4572-9479-c6649d9a55cd
+      portIndex: 1
+    outputPort:
+      nodeId: 8e0cafda-d10d-4d63-bd9c-4c5899c1a818
+      portIndex: 0
+  gameObject: {fileID: 0}
+  references:
+    version: 2
+    RefIds:
+    - rid: 706393809746657293
+      type: {class: DebugLogNode, ns: CodeGraph, asm: CodeGraph}
+      data:
+        m_guid: 8e0cafda-d10d-4d63-bd9c-4c5899c1a818
+        m_position:
+          serializedVersion: 2
+          x: 236
+          y: 121
+          width: 173
+          height: 97
+        typeName: CodeGraph.DebugLogNode, CodeGraph, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+        logMessage: trytry
+    - rid: 706393809746657294
+      type: {class: StartNode, ns: CodeGraph, asm: CodeGraph}
+      data:
+        m_guid: fda90522-6665-4bf1-9af0-562a77fd31fa
+        m_position:
+          serializedVersion: 2
+          x: 94
+          y: 257
+          width: 77
+          height: 77
+        typeName: CodeGraph.StartNode, CodeGraph, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+    - rid: 706393823373164544
+      type: {class: MoveNode, ns: CodeGraph, asm: CodeGraph}
+      data:
+        m_guid: fd89663e-8020-4572-9479-c6649d9a55cd
+        m_position:
+          serializedVersion: 2
+          x: 518
+          y: 237
+          width: 235
+          height: 97
+        typeName: CodeGraph.MoveNode, CodeGraph, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+        direction: {x: 5, y: 1, z: 1}
